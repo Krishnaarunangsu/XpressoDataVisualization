@@ -27,9 +27,11 @@ print('****************************************************')
 print(f'FIRST 3 ROWS:\n{dataset.head(3)}')
 
 print('****************************************************')
+
 # Create a separate dataframe which has only Categorical Variables
 print(f'Categorical DataFrame Subset')
 ds_cat = dataset.select_dtypes(include='object').copy()
+
 print('****************************************************')
 print(f'FIRST 3 ROWS:\n{ds_cat.head(2)}')
 

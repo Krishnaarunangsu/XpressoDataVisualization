@@ -7,5 +7,6 @@ df = pd.DataFrame({
     'chi': np.random.chisquare(4, 1000)
 })
 
+print(df)
 
-print(f'Head:{pd.cut(df["normal"], 8).head()}')
+print(f'Head:\n{pd.cut(df["normal"], 8).head()}')
